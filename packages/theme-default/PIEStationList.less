@@ -1,0 +1,92 @@
+@import "./variable.less";
+.list-box {
+  padding: @padding-default;
+  width: 400px;
+  height: 500px;
+  border: 1px solid rgba(93, 228, 248, 0.6);
+  border-radius: @border-radius-default;
+  background-color: rgba(5, 32, 53, 0.712);
+  // opacity: .5;
+  .list-title {
+    display: flex;
+    margin-top: 15px;
+    .title-line {
+      width: 4px;
+      height: 17px;
+      background-color: rgba(93, 228, 248);
+    }
+    .title-text {
+      font-size: @font-size-large;
+      color: @font-color-light;
+      margin-left: 10px;
+      font-weight: 700;
+    }
+  }
+  // 表格区域
+  .table-box {
+    color: @font-color-white;
+    margin-top: 15px;
+    .expand_table td,
+    .expand_table th.is-leaf {
+      border-bottom: none;
+    }
+    .expand_table::before {
+      height: 0;
+    }
+    .el-table tbody tr {
+      pointer-events: none;
+    }
+    .el-table {
+      --el-table-header-bg-color: #021b3a;
+    }
+    .el-table tr {
+      background-color: #021b3a;
+      color: @font-color-white;
+    }
+    .el-table--border:after,
+    .el-table--group:after,
+    .el-table:before {
+      background-color: rgb(6, 18, 50);
+    }
+
+    .el-table--border,
+    .el-table--group {
+      border-color: rgb(6, 18, 50);
+    }
+
+    .el-table td,
+    .el-table th.is-leaf {
+      border-bottom: 3px solid rgb(6, 18, 50);
+    }
+
+    .el-table--border th,
+    .el-table--border th.gutter:last-of-type {
+      border-bottom: 3px solid rgb(6, 18, 50);
+    }
+
+    .el-table--border td,
+    .el-table--border th {
+      border-right: 3px solid rgb(6, 18, 50);
+    }
+    .el-table__inner-wrapper::before {
+        height: 0;
+    }
+    .el-table--border .el-table__inner-wrapper::after {
+        height: 0;
+    }
+    .el-table--border::after {
+        width: 0;
+    }
+    .el-table--border::before {
+        width: 0;
+    }
+
+  }
+}
+.icon-yuandian {
+    color: rgb(207, 118, 16);
+}
+.icon-yuandiancheng-copy {
+    color: rgb(124, 219, 124);
+}
+

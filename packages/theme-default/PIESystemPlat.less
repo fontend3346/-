@@ -1,0 +1,99 @@
+@import "./variable.less";
+
+.system-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(5, 32, 53, 0.712);
+  color: #fff;
+  border: 1px solid @global-border-color1;
+  border-radius: 5px;
+  // 图
+  .center-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    .content-flex {
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+
+      .content-flex-back {
+        text-align: center;
+        line-height: 30px;
+        width: 100%;
+        height: 30px;
+        background: #0d366a;
+        border-radius: 1px;
+      }
+      .pit-style {
+        width: 100%;
+        height: 125px;
+        //  background: red;
+      }
+    }
+     .content-flexs {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 49%;
+      .pie-total{
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        z-index: 10;
+        font-size: 12px;
+      }
+      .content-flex-back {
+        text-align: center;
+        line-height: 30px;
+        width: 100%;
+        height: 30px;
+        background: #0d366a;
+        border-radius: 1px;
+      }
+      .pit-style {
+        width: 100%;
+        height: 125px;
+        //  background: red;
+      }
+    }
+  }
+  .specil-style {
+    margin-bottom: 10px;
+  }
+  // 顶部
+  .title-top {
+    position: relative;
+    height: 30px;
+    line-height: 35px;
+    // letter-spacing: 3px;
+    z-index: 0;
+    padding-left: 23px;
+    box-sizing: border-box;
+    font-size: 16px;
+    .title-text {
+      font-weight: 700;
+      background: linear-gradient(180deg, #ffffff 16%, #b5b8bd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .title-trape {
+      position: absolute;
+      width: 200px;
+      height: 17px;
+      bottom: 0;
+      left: 10px;
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(93, 228, 248, 0.6)
+      );
+      z-index: -1;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+}

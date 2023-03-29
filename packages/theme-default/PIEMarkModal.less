@@ -1,0 +1,168 @@
+.pie-mark-modal {
+  display: flex;
+  flex-direction: column;
+  // background: url(../../src/assets/image/bullet-frame-big.png);
+
+  background: linear-gradient(rgba(0, 38, 73, 0.88) 0%, rgba(0, 47, 91, 0.96) 100%) transparent;
+  box-shadow: rgb(61 141 255 / 30%) 0px 4px 20px 0px, rgb(0 100 186 / 50%) 0px 0px 32px 0px inset;
+  border: 1px solid;
+  border-image: linear-gradient(rgb(0, 133, 192), rgb(0, 91, 176)) 1 / 1 / 0 stretch;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  width: 400px;
+  // min-height: 300px;
+  // max-height: 500px;
+  min-height: 700px;
+  max-height: 800px;
+  overflow-y: auto;
+  position: relative;
+
+  // 设备回显
+  .detail-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    padding: 25px 25px 25px 30px;
+    box-sizing: border-box;
+
+    .data-main {
+      display: flex;
+      // margin-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .data-name {
+      width: 100px;
+    }
+
+    .data-info {
+      width: calc(100% - 100px);
+    }
+
+    .data-btns {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      justify-content: flex-end;
+
+      .data-btn {
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        background: #024765;
+        text-align: center;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // 设备编辑
+  .equipment-manage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px 20px 25px;
+    box-sizing: border-box;
+
+    .equipment-contents {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 10px;
+
+      .equip-name {
+        width: 80px;
+      }
+
+      .equip-names {
+        width: 80px;
+        text-align: center;
+      }
+
+      .el-input {
+        width: 86px;
+      }
+
+      .iconfont {
+        cursor: pointer;
+        margin-left: 5px;
+      }
+    }
+
+    .equipment-btn {
+      display: flex;
+      justify-content: flex-end;
+
+      .btn {
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        background: #024765;
+        text-align: center;
+        margin-left: 20px;
+        cursor: pointer;
+        color: #fff;
+        box-sizing: border-box;
+        margin-top: 10px;
+      }
+    }
+
+    .equipment-content {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 10px;
+
+      .equip-name {
+        width: 80px;
+      }
+
+      .el-input {
+        width: 250px;
+      }
+    }
+  }
+
+  .equipment-manage::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.pie-mark-modal::before {
+  content: "";
+  display: block;
+  /* width: 8px; */
+  // border-left: 28px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid transparent;
+  border-left: 7px solid #0173DD;
+  border-bottom: 10px solid transparent;
+  /* border-right: 10px solid red; */
+  height: 32px;
+  position: absolute;
+  left: -1px;
+  top: 7%;
+}
+
+
+.pie-mark-modal::after {
+  content: "";
+  display: block;
+  /* width: 8px; */
+  border-top: 10px solid transparent;
+  border-right: 7px solid #0173DD;
+  border-bottom: 10px solid transparent;
+  /* border-right: 10px solid red; */
+  height: 20%;
+  width: 0px;
+  position: absolute;
+  right: 0px;
+  top: 67%;
+}
+
+.pie-mark-modal::-webkit-scrollbar {
+  display: none;
+}

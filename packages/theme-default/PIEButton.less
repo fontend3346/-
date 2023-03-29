@@ -1,0 +1,96 @@
+/**
+  * @file 按钮
+*/
+
+@import './variable.less';
+
+.pie-btn {
+
+  // 按钮类型白色字体
+  .pie-btn-type-white(@borderColor, @backGround: @color-default, @Color: @color-default) {
+    color: @Color;
+    border-color: @borderColor;
+    background: @backGround;
+
+    .pie-icon {
+      color: @Color;
+    }
+
+    &.pie-btn-plain {
+      background: @color-default;
+      color: @borderColor;
+
+      .pie-icon {
+        color: @borderColor;
+      }
+
+      &.disabled {
+        color: lighten(@borderColor, 20%);
+        background: lighten(@color-default, 20%);
+
+        .pie-icon {
+          color: lighten(@borderColor, 20%);
+        }
+      }
+    }
+
+    &.disabled {
+      @color-lighten-20: lighten(@Color, 20%);
+      color: @color-lighten-20;
+      border-color: lighten(@borderColor, 20%);
+      background: lighten(@backGround, 20%);
+      cursor: not-allowed;
+
+      .pie-icon {
+        color: @color-lighten-20;
+      }
+    }
+  }
+
+  .pie-clamp();
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid transparent;
+  border-radius: @border-radius-default;
+  padding: 0 15px;
+  text-align: center;
+  font-size: @font-size;
+  font-style: normal;
+  outline: none;
+
+  /* 主题样式 start */
+  &.pie-btn-default {
+    .pie-btn-type-white(@border-color-default, @color-default, @font-color);
+  }
+
+  &.pie-btn-primary {
+    .pie-btn-type-white(@color-primary, @color-primary);
+  }
+
+  &.pie-btn-success {
+    .pie-btn-type-white(@color-success, @color-success);
+  }
+
+  &.pie-btn-info {
+    .pie-btn-type-white(@color-info, @color-info);
+  }
+
+  &.pie-btn-warning {
+    .pie-btn-type-white(@color-warning, @color-warning);
+  }
+
+  &.pie-btn-danger {
+    .pie-btn-type-white(@color-danger, @color-danger);
+  }
+
+  /* 主题样式 end */
+
+  // 图标样式
+  .pie-icon {
+    margin-right: 5px;
+  }
+}

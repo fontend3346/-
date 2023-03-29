@@ -1,0 +1,54 @@
+@import "./variable.less";
+
+.report-box {
+  padding: 0 20px;
+
+  .report-left-box {
+    position: relative;
+    height: 40px;
+    width: 250px;
+    background-color: rgba(26, 53, 74, 0.747);
+    border-radius: 5px;
+    border: 1px solid #245671;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+
+    span {
+      background: linear-gradient(180deg, #ffffff 16%, #9fb8e4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .icon-box {
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: -21px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      // border: 1px solid #53c3ff;
+      box-sizing: border-box;
+      background-color: #1a354a;
+    }
+
+    .icon-radius {
+      font-size: 24px;
+    }
+
+  }
+
+  .report-left-box:first-child {
+    margin-top: 0;
+  }
+
+  .activereport {
+    background-color: #01325D;
+  }
+}

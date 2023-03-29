@@ -1,0 +1,194 @@
+@import "./variable.less";
+.pie-dispatch-manage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  // 左边
+  .dispatch-manage-left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    background: @content-bg;
+    overflow-y: auto;
+    cursor: pointer;
+    .left-title {
+      color: @main-font-color;
+      font-size: @main-font-size;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+    .card-con {
+      width: 100%;
+      max-height: calc(100% - 130px);
+      overflow-y: auto;
+      .left-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid @global-header-bbg;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        color: @main-font-color;
+        font-size: 15px;
+        .content-item {
+          display: flex;
+          justify-content: space-between;
+          .iconfont {
+            font-size: 22px;
+          }
+        }
+        .item {
+          padding: 2px 0;
+          box-sizing: border-box;
+        }
+        .content-end {
+          display: flex;
+          align-items: center;
+          .iconfont {
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .card-con::-webkit-scrollbar {
+      display: none;
+    }
+    .page-style {
+      margin: 10px;
+    }
+  }
+  .dispatch-manage-left::-webkit-scrollbar {
+    display: none;
+  }
+  // 右边
+  .dispatch-manage-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 74%;
+    // background: green;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid @global-header-bbg;
+    // 下边
+    .right-bot {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 73%;
+      background: @content-bg;
+      .right-bot-title {
+        display: flex;
+        align-items: center;
+        color: @main-font-color;
+        font-size: @main-font-size;
+        width: 100%;
+        padding: 10px 0 10px 6px;
+        box-sizing: border-box;
+        background: @menu-active;
+        margin-bottom: 10px;
+      }
+      .steps-style {
+        width: 100%;
+        max-height: 88%;
+        // height: 300px;
+        overflow-y: auto;
+        :deep(.el-step__icon.is-text) {
+          border-radius: 50%;
+          border: 2px solid;
+          border-color: @main-font-color;
+        }
+        .el-step.is-vertical .el-step__icon.is-icon {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 2px solid;
+          font-size: @main-font-size;
+        }
+        :deep(.el-step__main) {
+          width: 100%;
+          height: 100%;
+        }
+        :deep(.el-step__description) {
+          background: @content-bg;
+        }
+        .description-style {
+          font-size: 14px;
+          margin-bottom: 20px;
+          .file-modal {
+            cursor: pointer;
+          }
+          .steps-info {
+            color: #fff;
+            margin: 5px 0;
+            .is-Resolve {
+              color: #98dcff;
+              margin-left: 5px;
+            }
+          }
+          img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    // 顶部
+    .right-top {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 25%;
+      // border: 1px solid @global-header-bbg;
+      background: @content-bg;
+      .right-top-title {
+        display: flex;
+        align-items: center;
+        color: @main-font-color;
+        font-size: @main-font-size;
+        width: 100%;
+        padding: 6px 0 6px 0;
+        box-sizing: border-box;
+        .title-name {
+          padding: 5px 10px;
+          box-sizing: border-box;
+          background: @menu-active;
+          margin-right: 10px;
+        }
+      }
+      .right-top-item {
+        display: flex;
+        align-items: center;
+        color: @main-font-color;
+        font-size: @main-font-size;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+        box-sizing: border-box;
+      }
+      .right-top-bot {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item-content {
+          width: 33%;
+          padding: 10px 0 10px 10px;
+          box-sizing: border-box;
+          color: @main-font-color;
+          font-size: @main-font-size;
+        }
+      }
+    }
+  }
+  // 点击高亮
+  .actives {
+    background: @menu-active;
+  }
+}

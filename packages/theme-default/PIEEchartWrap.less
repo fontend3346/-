@@ -1,0 +1,115 @@
+.maveForm-wrap {
+  .search-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .header-left-content {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      .title {
+        color: rgb(150, 200, 250);
+        font-size: @main-font-size;
+        margin-right: @title-padding;
+      }
+      .modal-select {
+        width: @input-width;
+      }
+      // 通道
+      .modal-select-aisle {
+        .el-input__wrapper {
+          width: 80px;
+          flex-grow: 0;
+        }
+      }
+      // .el-input {
+      //   width: @input-width;
+      //   color: @main-font-color;
+      //   background: transparent;
+      //   border-bottom-right-radius: 5px;
+      //   height: 40px;
+      // }
+    }
+    .event-num {
+      font-size: @main-font-size;
+      color:rgb(150, 200, 250) ;
+      margin-right: 10px;
+    }
+    //上下箭头
+    .echarts-setItem {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      .echarts-btn {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid rgb(0,170, 211);
+        // display: flex;
+        // align-items: center;
+        margin-right: 10px;
+        cursor: pointer;
+        // background: #f2f2f2;
+        .arrows {
+          color: #fff;
+          font-size: 18px;
+        }
+        .amplitude {
+          line-height: 24px;
+          font-size: 18px;
+        }
+      }
+    }
+    // 方向
+    .direction-style {
+      display: flex;
+      align-items: center;
+      border: 1px solid rgb(0, 170, 211);
+      
+      height: 36px;
+      padding: 0 5px;
+      box-sizing: border-box;
+      margin-right: 10px;
+      .el-checkbox__label{
+        color: rgb(150, 200, 250);
+      }
+    }
+  }
+  //波形
+  .modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .warn-grade {
+      width: 100%;
+      max-height: 700px;
+      overflow-y: auto;
+       .mycharts {
+        box-sizing: border-box;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+           margin: 10px 0 25px 0px;
+           padding: 5px;
+      }
+    }
+//     .warn-grade::-webkit-scrollbar {
+//   display: none;
+// }
+  }
+  .pie-panel-content {
+    // background: #fff;
+    box-shadow: none;
+  }
+  .pie-panel-content::before {
+    border: none;
+  }
+  .pie-panel-content::after {
+    border: none;
+  }
+  // .pie-panel-content .header .iconfont {
+  //   // color: black;
+  // }
+}

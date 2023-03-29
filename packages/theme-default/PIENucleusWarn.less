@@ -1,0 +1,96 @@
+@import "./variable.less";
+
+.warn-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(5, 32, 53, 0.712);
+  color: #fff;
+  border: 1px solid @global-border-color1;
+  border-radius: 5px;
+  //
+  .center-box-main {
+    width: 100%;
+    .center-safe {
+      margin: 10px 0 0 10px;
+    }
+    .specil-style {
+      margin-bottom: 10px;
+    }
+  }
+  .content-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // background: red;
+    .center-content {
+      display: flex;
+      margin-top: 10px;
+      font-size: 12px;
+      .content-right {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .right-two {
+          width: 100%;
+          display: flex;
+          .right-cont {
+            display: flex;
+            width: 50%;
+            .right-title {
+              display: inline-block;
+              width: 40px;
+
+            }
+            .right-title-num {
+                display: inline-block;
+                margin-right: 5px;
+              }
+          }
+        }
+      }
+      .content-left {
+        text-align: center;
+        width: 20%;
+        height: 60px;
+        img {
+          width: 70%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  // 顶部
+  .title-top {
+    position: relative;
+    height: 30px;
+    line-height: 35px;
+    // letter-spacing: 3px;
+    z-index: 0;
+    padding-left: 23px;
+    box-sizing: border-box;
+    font-size: 16px;
+    .title-text {
+      font-weight: 700;
+      background: linear-gradient(180deg, #ffffff 16%, #b5b8bd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .title-trape {
+      position: absolute;
+      width: 200px;
+      height: 17px;
+      bottom: 0;
+      left: 10px;
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(93, 228, 248, 0.6)
+      );
+      z-index: -1;
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+}

@@ -1,0 +1,218 @@
+// 此处可以放置全局的less变量
+
+@import "bases.less";
+
+// 1、框架相关颜色值
+
+// 背景颜色
+//主体背景颜色
+// @global-bg: radial-gradient(ellipse farthest-side at 950px -40px, #030636 70%,#00020a 90%)
+// @global-bg: #1077f5
+@global-bg: radial-gradient(ellipse 800px 1000px at 50% 0%,
+    #0e3f82 10%,
+    #090e57 70%,
+    #04043d 100%);
+//全局头部背景
+@global-header-bg: #101d3b;
+//头部边框颜色
+@global-header-bbg: #0464cb;
+//内容区域背景颜色
+@content-bg: rgba(95, 152, 255, 0.1);
+
+//主体边框颜色
+@global-border-color: #021b3a;
+// @lable-font-color: #c9e1ff;
+// 顶部菜单栏高度
+@header-menu-height: 50px;
+@header-menuList-height: 94px;
+
+//头部主标题大小
+@main-title-size: 24px;
+//系统标题
+@header-title-size: 20px;
+//菜单每一项字体大小
+@header-item-size: 18px;
+//主体字体大小
+@main-font-size: 16px;
+@main-font-size-eighteen: 18px;
+@input-width: 240px;
+
+//主体字体颜色
+@main-font-color: #98dcff;
+// @main-font-color: #8bc5e4;
+
+// 部分特殊字体颜色
+@special-font-color: #00b3dd;
+//主体字体选中颜色
+@menu-selected: #c9e1ff;
+
+// 顶部导航tab页面相关色值
+//左侧导航-激活背景色
+@menu-active: #3a77d3;
+@menu-font-color: #4d96be;
+
+@menu-item-bg: linear-gradient(-45deg, transparent 6px, #1d3457 0);
+@menu-item-bg-ac: linear-gradient(-45deg,
+    transparent 6px,
+    rgba(28, 95, 177, 0.9) 0);
+
+//菜单字体颜色
+@menu-fontcolor: #98dcff;
+@left-menu-fcolor: red;
+@modal-border-color: #1d3870;
+//左侧导航列表边框颜色
+@main-border-color: #042667;
+
+//内容右侧区域边框颜色
+@content-border-color: #1d3870;
+//左侧导航列表字体颜色
+@left-menu-font: #3d6699;
+//左侧导航列表选中字体颜色
+@left-menu-font-ac: #c9e1ff;
+
+//全局按钮相关
+//列表字体颜色
+@list-fontcolor: #98dcff;
+//常规按钮颜色
+@btn-bg-color: #0377a8;
+
+//搜索按钮框背景颜色 (日期选择器面板背景颜色)
+@select-btn-bg: #121e51;
+
+//搜索按钮边框背景颜色
+@select-btn-border: 1px solid #0f3a4f;
+
+//搜索按钮字体颜色
+@select-btn-fontcolor: 1px solid #0f3a4f;
+
+//删除按钮颜色
+@del-btn-bg: #c80000;
+
+//导出按钮颜色
+@export-btn-bg: #00af63;
+@export-btn-color: #fff;
+//选中颜色
+@main-active-color: #1077f5;
+@search-btn-bg: #0f3a4f;
+//新建按钮颜色
+@new-btn-bg: rgb(250, 182, 0);
+
+//按钮字体大小
+@btn-font-size: 14px;
+
+//输入框背景颜色
+@input-bg-color: rgba(0, 0, 0, 0.8);
+// @input-bg-color: radial-gradient(
+//   ellipse 800px 1000px at 50% 0%,
+//   #0e3f82 10%,
+//   #030636 70%,
+//   #0d0d0e 100%
+// );
+//输入框提示字体颜色(placeholder)
+@input-placeholder-font-color: #5581b7;
+
+// table表单样式
+@th-border-color: #1d3870;
+@table-text-color: #98dcff;
+@table-th-bg: rgba(95, 152, 255, 0.1);
+//@菜单背景颜色
+@menu-bg-color: #001528;
+//@菜单字体颜色
+@menu-font-color: #bdcbd9;
+//表单内边距
+@table-padding: 20px;
+//内边距
+@global-padding: 20px;
+@global-small-padding: 10px;
+//外边距
+@global-margin: 20px;
+
+//表格顶部边距
+@table-top-space: 20px;
+
+//两个输入框的距离
+@table-input-space: 30px;
+
+//标题与输入框距离
+@table-lable-space: 30px;
+//button直接边距
+@table-btn-space: 30px;
+
+//输入框与搜索框边距
+@search-lable-space: 20px;
+
+//两个按钮的距离
+@table-button-space: 20px;
+
+//表单搜索 条件标题 lable字体
+@lable-font-size: 16px;
+@lable-font-color: #c9e1ff;
+
+// checked 默认颜色
+@checked-color: #6d9bef;
+
+// checked 选中颜色
+@checked-color-ac: #5f98ff;
+
+// 分页
+@page-border-color: #98dcff;
+@page-bg-color: white;
+@page-active-color: rgb(24, 144, 255);
+@page-font-color: #3d6699;
+@page-bg-color-ac: white;
+@page-font-color-ac: #c9e1ff;
+
+//模块列表通用样式
+
+//模板字体大小
+@template-font-size: 18px;
+//边框颜色
+@template-border-color: rgba(25, 56, 63, 1);
+@template-color: #fff; // 模板模块字体主题颜色
+
+//禁用状态内容区域颜色
+@not-allowed-bg: rgba(141, 184, 214, 0.2);
+
+//相关法规管理、公告公示管理border边框颜色
+@manage-border-color: #1d3870;
+
+//弹出框背景颜色
+@modals-bg-color: rgba(10, 13, 62, 0.85);
+
+//弹出框边框颜色
+@modals-border-color: rgba(3, 52, 122, 1);
+
+//全局提示
+@bg-color: #09123e;
+@font-color: #98dcff;
+@border-color: #133172;
+
+//系统概况字体颜色
+// 正常
+@system-normal-font-color: #3cd17c;
+// 异常
+@system-abnormity-font-color: #fc3e63;
+
+//===【表格操作按钮】===
+//按钮操作颜色
+@operate-text-color: #00a2ff;
+@crad-border-color: #0077a9;
+
+// 标题间隔
+@title-padding: 8px;
+// 组件距离左侧顶部的距离
+@globel-position: 10px;
+
+// 边框圆角
+@globel-radius: 4px;
+// 设备挂接内边距
+@device-padding: 20px;
+// 设备挂接边框样式
+@device-border: 1px solid rgba(255, 255, 255, 0.2);
+
+// 输入框的宽度
+@input-width: 250px;
+// 输入框的高度
+@input-height: 40px;
+// 搜索输入框之间的距离
+@input-margin: 10px;

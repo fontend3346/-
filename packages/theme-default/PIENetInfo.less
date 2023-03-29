@@ -1,0 +1,96 @@
+@import "./variable.less";
+
+.net-info {
+  background: linear-gradient(
+      rgba(0, 38, 73, 0.88) 0%,
+      rgba(0, 47, 91, 0.96) 100%
+    )
+    transparent;
+  box-shadow: rgb(61 141 255 / 30%) 0px 4px 20px 0px,
+    rgb(0 100 186 / 50%) 0px 0px 32px 0px inset;
+  border: 1px solid;
+  border-image: linear-gradient(rgb(0, 133, 192), rgb(0, 91, 176)) 1 / 1 / 0
+    stretch;
+  color: @main-font-color;
+  width: 100%;
+  padding: 10px;
+
+  .title-line {
+    display: flex;
+    font-size: 16px;
+    position: relative;
+
+    .iconfont {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    .cancel-icon {
+      position: absolute;
+      right: -20px;
+      cursor: pointer;
+    }
+  }
+
+  .echarts-info-title {
+    position: relative;
+
+    .station-view {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .device-view {
+      position: absolute;
+      top: 10px;
+      left: 207px;
+    }
+  }
+
+  .echarts-info {
+    display: flex;
+    border: 1px solid rgb(6, 83, 160);
+    margin: 10px 0;
+
+    .echarts-item {
+      width: 200px;
+      height: 200px;
+      // border-right: 1px solid @border-color-selected;
+    }
+
+    .left-item {
+      border-right: 1px solid rgb(6, 83, 160);
+    }
+  }
+
+  .equipment-list {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid @border-color-default;
+    padding: 10px;
+
+    .item-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 70px;
+      background-color: #1f6c94;
+      margin-right: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #fff;
+
+      .num {
+        color: red;
+        font-weight: bold;
+      }
+    }
+
+    .ismargin {
+      margin-right: 0;
+    }
+  }
+}

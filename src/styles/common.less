@@ -1,0 +1,284 @@
+.pie-interspace {
+  padding: 0;
+  margin: 0;
+  // background-image: url("../assets/public/bg_2.png");
+  // color: #ffffff;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+// .pie-container:extend(.flex-column) {
+// }
+// 视口滚动条调整
+.pie-container {
+  overflow: auto;
+  height: 800px;
+}
+
+.pie-container::-webkit-scrollbar {
+  display: none;
+}
+
+.left-menu {
+  box-shadow: inset 0px 0px 5px 3px rgba(3, 53, 182, 0.4);
+  border: 1px solid @main-border-color;
+  margin-right: 10px;
+  min-height: calc(100vh - 300px);
+  font-size: 16px;
+}
+
+.left-menu-title {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  // background-image: url("@/assets/public/left_menu_bg.png");
+  background-size: 100%;
+  background-repeat: round;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: @left-menu-fcolor;
+  font-family: "SourceHanSansCN-Regular", "思源黑体 CN", sans-serif;
+  padding: 10px;
+
+  .title {
+    margin-left: 20px;
+  }
+}
+
+// .right-content {
+//   min-height: calc(100vh - 240px);
+//   width: 100%;
+//   max-width: 100%;
+// }
+
+.menu-title-container {
+  display: flex;
+  align-items: center;
+  color: @left-menu-font;
+  font-size: 16px;
+
+  .iconfont {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+.ivu-menu-item-active .menu-title-container > span {
+  color: @left-menu-font-ac;
+}
+
+.ivu-menu-item-active .menu-title-container .iconfont {
+  color: @left-menu-font-ac;
+}
+
+//背景色透明
+.public-bg {
+  background: transparent;
+}
+
+//统计表
+// .pie-tb-content {
+// padding: 20px 0;
+// max-height: calc(100vh - 300px);
+// overflow-y: scroll;
+// }
+
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// .pie-tb-header {
+//   // padding: 20px;
+// }
+
+.pie-tb-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// .ivu-select-selection,
+// .ivu-select-placeholder,
+// .ivu-select-single .ivu-select-selection .ivu-select-placeholder {
+//   background-color: #efefef;
+//   color: #444444;
+// }
+//  .ivu-select-placeholder {
+//   background-color: #efefef;
+//   color: #444444;
+// }
+
+// .ivu-input-placeholder{
+//   color: red;
+// }
+#childrenContainer {
+  height: 100%;
+}
+
+//mapbox弹框样式
+.my-Popup {
+  width: 300px;
+
+  .mapboxgl-popup-content {
+    padding: 0;
+
+    .makerTop {
+      // background-color:#304559;  //#2C5573
+      background: linear-gradient(#2d3c4a, #2c5573);
+      width: 100%;
+      height: 35px;
+      padding-left: 10px;
+      line-height: 35px;
+
+      .markerHear {
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+      }
+    }
+
+    .mapboxgl-popup-close-button {
+      position: absolute;
+      right: 10px;
+      top: 3.5px;
+      border: 0;
+      border-radius: 0 3px 0 0;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+      font-size: 26px;
+    }
+
+    .markerBody {
+      background-color: #091324;
+      padding: 8px 10px;
+      border: solid 1px #052f66;
+      border-top: none;
+
+      p {
+        font-size: 14px;
+        margin: 0 !important;
+        line-height: 30px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//mapbox弹框样式
+.my-Popup {
+  width: 300px;
+
+  .mapboxgl-popup-content {
+    padding: 0;
+
+    .makerTop {
+      // background-color:#304559;  //#2C5573
+      background: linear-gradient(#2d3c4a, #2c5573);
+      width: 100%;
+      height: 35px;
+      padding-left: 10px;
+      line-height: 35px;
+
+      .markerHear {
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+      }
+    }
+
+    .mapboxgl-popup-close-button {
+      position: absolute;
+      right: 10px;
+      top: 3.5px;
+      border: 0;
+      border-radius: 0 3px 0 0;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+      font-size: 26px;
+    }
+
+    .markerBody {
+      background-color: #091324;
+      padding: 8px 10px;
+      border: solid 1px #052f66;
+      border-top: none;
+
+      p {
+        font-size: 14px;
+        margin: 0 !important;
+        line-height: 30px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.lightMarker {
+  display: block;
+  border: none;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  padding: 0;
+  /* background: url("img/24px.png"); */
+  width: 2px;
+  height: 2px;
+  padding-left: 5px;
+
+  p {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: myfirst 1.5s infinite;
+    box-shadow: 0px 0px 1px transparent;
+    animation-iteration-count: 2;
+    /*动画只执行一次*/
+    -moz-animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    /*让动画停留在最后一帧 */
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+  }
+}
+
+/* .marker span{position: absolute;display:block;width: 10px;height: 10px;border-radius:50%;animation: myfirst 1.5s  infinite;box-shadow: 0px 0px 1px #009FD9; animation-delay: 0.5s;}   */
+@keyframes myfirst {
+  0% {
+    background-color: rgba(250, 7, 7, 1);
+    transform: scale(2);
+  }
+
+  20% {
+    background-color: rgba(250, 7, 7, 0.8);
+    transform: scale(2);
+  }
+
+  40% {
+    transform: scale(10);
+    background-color: rgba(250, 7, 7, 0.6);
+  }
+
+  60% {
+    transform: scale(100);
+    background-color: rgba(250, 7, 7, 0.4);
+  }
+
+  80% {
+    transform: scale(150);
+    background-color: rgba(250, 7, 7, 0.3);
+  }
+
+  100% {
+    transform: scale(200);
+    background-color: rgba(250, 7, 7, 0);
+  }
+}

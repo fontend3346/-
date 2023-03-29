@@ -1,0 +1,10 @@
+newmtl wire_154215229
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6039 0.8431 0.8980
+	Kd 0.8980 0.8980 0.8980
+	Ks 255 255 255
+	map_Kd ./archmodels95_043_001.jpg

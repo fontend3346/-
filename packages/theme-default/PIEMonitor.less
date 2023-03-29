@@ -1,0 +1,76 @@
+@import "./variable.less";
+
+.monitor-wrap {
+  width: 100%;
+  height: 100%;
+  .monitor-top,
+  .monitor-bottom {
+    width: 100%;
+    height: 50%;
+  }
+  .monitor-top {
+    height: calc(50% - 10px);
+    margin-bottom: 10px;
+    .monitor-echarts {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .content-flex {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+        box-sizing: border-box;
+        .content-flex-back {
+          text-align: center;
+          line-height: 40px;
+          width: 100%;
+          height: 40px;
+          background: #053276;
+          border-radius: 1px;
+          color: #fff;
+        }
+        .pit-style {
+          width: 100%;
+          height: calc(100% - 30px);
+        }
+      }
+      .content-flexs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 25%;
+        height: 100%;
+        .pie-total {
+          position: absolute;
+          left: 0;
+          bottom: 0px;
+          z-index: 10;
+          font-size: 12px;
+          color: #fff;
+        }
+        .content-flex-back {
+          text-align: center;
+          line-height: 40px;
+          width: 100%;
+          height: 40px;
+          background: #053276;
+          border-radius: 1px;
+          color: #fff;
+        }
+        .pit-style {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .monitor-bottom {
+    .table-title {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+  }
+}

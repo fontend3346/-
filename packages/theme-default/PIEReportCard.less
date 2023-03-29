@@ -1,0 +1,106 @@
+@import './variable.less';
+
+.card-box {
+  background-color: rgba(26, 53, 74, 0.747);
+  border-radius: 4px;
+  border: 1px solid #245671;
+  width: 300px;
+
+  .title-box {
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      margin-left: 40px;
+    }
+  }
+
+  .title-box::after {
+    width: 2px;
+    height: 12px;
+    background-color: #1EF4FF;
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .process-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 160px;
+
+    .process-case {
+
+
+      .my-process {
+        box-shadow: 0px 10px 10px -5px #0758B3 inset;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+
+        .process-inner {
+          box-shadow: 0px -10px 10px -5px #0758B3 inset;
+          letter-spacing: 3px;
+          height: 40px;
+          line-height: 40px;
+        }
+
+        .process-inner::before {
+          position: absolute;
+          left: -1px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 2px;
+          height: 13px;
+          background-color: #01AEE6;
+          content: "";
+        }
+
+        .process-inner::after {
+          position: absolute;
+          right: -1px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 2px;
+          height: 13px;
+          background-color: #01AEE6;
+          content: "";
+        }
+      }
+
+      .process-stash {
+
+        display: flex;
+        flex-direction: column;
+
+        .process-dotted {
+          width: 0;
+          height: 40px;
+          border-left: 2px dashed #1EF4FF;
+          margin: auto;
+        }
+
+        .process-row {
+          width: 15px;
+          height: 18px;
+          background-color: #1EF4FF;
+          clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+          margin: auto;
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,203 @@
+/**
+  * @file 按钮
+*/
+
+@import "./variable.less";
+
+// .cancel-btn,
+// .layer-btn {
+//   background: #0377a8;
+// }
+
+.pie-panel {
+  overflow: hidden;
+
+  .pie-panel-content {
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    background-color: @bg-colors;
+    box-sizing: border-box;
+    min-height: 200px;
+
+    background: linear-gradient(rgba(0, 38, 73) 0%, rgba(0, 47, 91) 100%) transparent;
+    // background: linear-gradient(rgba(0, 38, 73, 0.88) 0%, rgba(0, 47, 91, 0.96) 100%) transparent;
+    box-shadow: rgb(61 141 255 / 30%) 0px 4px 20px 0px, rgb(0 100 186 / 50%) 0px 0px 32px 0px inset;
+    border: 1px solid;
+    border-image: linear-gradient(rgb(0, 133, 192), rgb(0, 91, 176)) 1 / 1 / 0 stretch;
+    // background: url(../../src/assets/qietu/modals-bg.png);
+    // background: url(../../src/assets/image/bullet-frame-big.png);
+    // background: url(../../src/assets/image/bullet-frame-big.png);
+    background-size: 100% 100%;
+
+  }
+
+  .pie-panel-content::before {
+    content: "";
+    display: block;
+    /* width: 8px; */
+    // border-left: 28px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid transparent;
+    border-left: 7px solid #0173DD;
+    border-bottom: 10px solid transparent;
+    /* border-right: 10px solid red; */
+    height: 32px;
+    position: absolute;
+    left: -1px;
+    top: 7%;
+  }
+
+
+  .pie-panel-content::after {
+    content: "";
+    display: block;
+    /* width: 8px; */
+    border-top: 10px solid transparent;
+    border-right: 7px solid #0173DD;
+    border-bottom: 10px solid transparent;
+    /* border-right: 10px solid red; */
+    height: 20%;
+    width: 0px;
+    position: absolute;
+    right: 0px;
+    top: 67%;
+  }
+
+  .header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // flex: 1;
+    background-size: cover;
+    height: 38px;
+    // height: 13%;
+    // padding-left: 20px;
+    // padding-top: 6px;
+    font-size: @template-font-size;
+    font-weight: 400;
+    color: @main-font-color;
+    padding: 24px 24px 0;
+    cursor: move;
+
+    // background-color: rgb(10, 10, 105);
+    .title {
+      color: @main-font-color;
+
+      .text {
+        font-size: 18px;
+
+        .tragger {}
+      }
+    }
+
+    span {
+      height: 38px;
+      line-height: 38px;
+      font-size: @template-font-size;
+    }
+
+    .iconfont {
+      // margin-right: 20px;
+      cursor: pointer;
+      //color: #959595;
+      width: 24px;
+      height: 24px;
+      //background: #F5F5F5;
+      border-radius: 50%;
+      line-height: 24px;
+      text-align: center;
+      transition: all 0.3s;
+      color: #fff;
+    }
+  }
+
+  .operate-item {
+    padding: @table-padding;
+    min-height: 0;
+    // width: 100%;
+    margin-bottom: 100px;
+    // overflow-y: scroll;
+    max-height: 900px;
+    // margin-left: 80px;
+    /*margin-left: 80px;*/
+    // display: flex;
+    // justify-content: center;
+    color: @main-font-color;
+    flex: 1;
+  }
+
+  .reset-btn-warp {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+
+    span {
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      line-height: 20px;
+      margin-left: 30px;
+      font-size: @template-font-size;
+      font-weight: 400;
+      color: #fff;
+      border-width: 2px;
+      border-style: solid;
+      border-color: @global-border-color;
+    }
+
+    .reset-btn {
+      cursor: pointer;
+      background: #225e78;
+    }
+  }
+
+  .operate-btn {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: @btn-bg-colors;
+
+    span {
+      min-width: 80px;
+      // height: 30px;
+      text-align: center;
+      // line-height: 30px;
+      //margin-left: 20px;
+      //padding: 10px 26px;
+      font-size: @template-font-size;
+      font-weight: 400;
+      border-radius: 4px;
+      // // color: #fff;
+      // border-width: 2px;
+      // border-style: solid;
+      // border-color: @global-border-color;
+    }
+
+    .cancel-btn {
+      cursor: pointer;
+      // background: #225e78;
+      color: #6b717c;
+      background-color: #e9ebed;
+    }
+
+    // .cancel-btn:hover, .confirm-btn:hover{
+    //   color: @btn-hover-color;
+    //   border: 1px solid @btn-hover-color;
+    // }
+    .confirm-btn {
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      background-color: #1e6fff;
+    }
+
+    .close {
+      color: #eee;
+    }
+  }
+}

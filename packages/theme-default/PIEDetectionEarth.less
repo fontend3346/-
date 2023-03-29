@@ -1,0 +1,188 @@
+.search-mark-modal {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+      rgba(0, 38, 73, 0.88) 0%,
+      rgba(0, 47, 91, 0.96) 100%
+    )
+    transparent;
+  box-shadow: rgb(61 141 255 / 30%) 0px 4px 20px 0px,
+    rgb(0 100 186 / 50%) 0px 0px 32px 0px inset;
+  border: 1px solid;
+  border-image: linear-gradient(rgb(0, 133, 192), rgb(0, 91, 176)) 1 / 1 / 0
+    stretch;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  width: 380px;
+  min-height: 300px;
+  max-height: 800px;
+  overflow-y: auto;
+  position: relative;
+}
+.search-mark-modal::before {
+  content: "";
+  display: block;
+  border-top: 10px solid transparent;
+  border-left: 7px solid #0173dd;
+  border-bottom: 10px solid transparent;
+  height: 32px;
+  position: absolute;
+  left: -1px;
+  top: 7%;
+}
+
+.search-mark-modal::after {
+  content: "";
+  display: block;
+  border-top: 10px solid transparent;
+  border-right: 7px solid #0173dd;
+  border-bottom: 10px solid transparent;
+  height: 20%;
+  width: 0px;
+  position: absolute;
+  right: 0px;
+  top: 67%;
+}
+.pie-mark-modal::-webkit-scrollbar {
+  display: none;
+}
+.container-search-modal {
+  padding: @global-padding;
+  box-sizing: border-box;
+  color: @main-font-color;
+  .mark-title{
+    display: flex;
+    align-items: center;
+    width:100%;
+    .iconfont{
+      margin-right: 10px;
+    }
+    span{
+      display: inline-block;
+    }
+  }
+  //头部
+  .top-line {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: @main-font-size;
+        color: @main-font-color;
+      }
+      .img-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 10px 0;
+        // background: @content-bg;
+        background: rgba(0,0,0,0.5);
+        // border: 1px solid @global-header-bbg;
+        // opacity: 1;
+        border-radius: 2px;
+        font-size: 34px;
+        cursor: pointer;
+      }
+      .img-active {
+        // background-color: @btn-bg-color;
+        color: @main-font-color;
+        background: rgba(0, 46, 89, 0.2);
+        box-shadow: inset 0px 0px 12px 0px rgba(0, 120, 222, 0.6);
+        border-radius: 4px;
+        border: 1px solid;
+        border-image: linear-gradient(
+            180deg,
+            rgba(0, 91, 176, 1),
+            rgba(99, 237, 255, 1),
+            rgba(0, 155, 223, 1)
+          )
+          1 1;
+      }
+    }
+  }
+  //矢量范围
+  .vector-cope {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    div {
+      border: 1px solid #00aadd;
+      border-radius: 2px;
+      margin-left: @search-lable-space;
+      padding: 5px;
+      box-sizing: border-box;
+      .iconfont {
+        width: 20px;
+        margin-right: 4px;
+      }
+    }
+  }
+  //行政区域
+  .administrative {
+    margin-bottom: 10px;
+    .select-span {
+      margin-right: @search-lable-space;
+    }
+    .select-admin {
+      width: 83px;
+    }
+  }
+  //经纬度
+  .coordinate {
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    .coordinate-span {
+      width: 55px;
+      text-align: right;
+      display: inline-block;
+      margin-right: @search-lable-space;
+    }
+    .input-width {
+      width: 125px;
+      margin-bottom: 5px;
+    }
+  }
+  //日期 震级 地点
+  .assess-way {
+    margin-bottom: 10px;
+    .assess-span {
+      width: 55px;
+      text-align: right;
+      display: inline-block;
+      margin-right: @search-lable-space;
+    }
+    .title {
+      text-align: right;
+      display: inline-block;
+      margin: 0 5px;
+    }
+    // .el-select {
+    //   width: @input-width;
+    // }
+    // .el-input__wrapper {
+    //   width: @input-width;
+    //   flex-grow: 0;
+    // }
+    .el-date-editor {
+      width: @input-width;
+      height: 36px;
+    }
+    //震级
+    .input-width-earth {
+      width: 113px;
+    }
+  }
+  .current {
+    background-color: @btn-bg-color;
+  }
+}

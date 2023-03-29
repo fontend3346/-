@@ -1,0 +1,577 @@
+@import "./variable.less";
+
+.pie-table {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  // 删除弹框
+
+  :deep(.el-table__header) {
+    width: 100% !important;
+    table-layout: auto !important;
+  }
+
+  :deep(.el-table__body) {
+    width: 100% !important;
+    table-layout: auto !important;
+  }
+
+  :deep(.el-table__body-wrapper) {
+    width: 100%;
+    max-height: 500px;
+    // overflow-y: scroll;
+  }
+
+  // 删除弹窗框背景色
+  :deep(.my-modal) {
+    background-color: transparent;
+  }
+
+  :deep(.el-table) {
+    // position: absolute;
+    color: @main-font-color;
+    background: transparent;
+    border: none;
+    width: 100%;
+    //--el-table-text-color:red;
+
+    el-table__header-wrapper table,
+    .el-table__body-wrapper table {
+      width: 100% !important;
+    }
+
+    .el-table__body,
+    .el-table__footer,
+    .el-table__header {
+      table-layout: auto;
+    }
+
+    el-table__header-wrapper table,
+    .el-table__body-wrapper table {
+      width: 100% !important;
+    }
+
+    .el-table__body,
+    .el-table__footer,
+    .el-table__header {
+      table-layout: auto;
+    }
+
+    // border-top: 1px solid #1d3870;
+    // border-bottom: 1px solid #1d3870;
+  }
+
+  //表格th 字体颜色
+  :deep(.el-table__header-wrapper .el-table__header tr th) {
+    color: @main-font-color;
+  }
+
+  .cell {
+    color: @main-font-color;
+    // border: 1px solid;
+  }
+
+  :deep(.el-table thead) {
+    background: transparent;
+    color: #fff;
+  }
+
+  .el-table--enable-row-transition .el-table__body tr:nth-of-type(even) {
+    background: transparent;
+    max-width: 100%;
+  }
+
+  .el-table--enable-row-transition .el-table__body tr:nth-of-type(odd) {
+    background: transparent;
+  }
+
+
+  width: 100%;
+
+  :deep(.el-table tr:nth-child(odd)) {
+    //偶数行
+    background: transparent;
+  }
+
+  :deep(.el-table tr:nth-child(even)) {
+    //偶数行
+    background: transparent;
+  }
+
+  :deep(th.el-table__cell.is-leaf) {
+    text-align: center;
+    background: @table-th-bg;
+    border: none;
+    // border-left: 1px solid @th-border-color;
+    color: @main-font-color;
+  }
+
+  :deep(td.el-table__cell) {
+    // border-bottom: 1px solid @th-border-color;
+    // border-left: 1px solid @th-border-color;
+    text-align: center;
+  }
+
+  :deep(.cell) {
+    word-break: break-all;
+  }
+
+  :deep(.el-table__body tr.current-row > td.el-table__cell) {
+    // color: #000;
+    background-color: transparent;
+    // color: #fff;
+  }
+
+  :deep(.el-table tr:hover) {
+    color: @th-border-color;
+  }
+
+  :deep(.el-table th.el-table__cell > .cell) {
+    padding: 0;
+  }
+
+
+  :deep(.el-table th.el-table__cell > .cell .icon-style::before) {
+    text-align: center;
+  }
+
+  .ouputBtn-table {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .detailBtn-table {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .setBtn-table {
+    cursor: pointer;
+  }
+
+  .icon-yanjing {
+    color: #d8af19;
+    margin-right: 15px;
+  }
+
+  .img-style {
+    width: 24px;
+  }
+
+  .icon-bianji {
+    color: #e57514;
+    margin-right: 15px;
+  }
+
+  .icon-7 {
+    color: #d22062;
+  }
+
+  //表格按钮颜色
+  .lookBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .updateBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .handleBtn-table {
+    margin-right: 15px;
+    color: rgb(0, 156, 92);
+    cursor: pointer;
+  }
+
+  .editBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .editBtns-table {
+    // margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .planBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .taskBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .dataDetailsBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  // 状态为0时
+  .dataDetailsBtns-table {
+    margin-right: 15px;
+    color: rgb(134, 129, 129);
+    cursor: not-allowed;
+    cursor: no-drop;
+  }
+
+  .resultDownBtns-table {
+    margin-right: 15px;
+    color: rgb(134, 129, 129);
+    cursor: not-allowed;
+    cursor: no-drop;
+  }
+
+  .taskDeduceBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .reportDetailsBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .startServeBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .newAgainBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .reportDownBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .replyBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .modelBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .taskDataBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .inferBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .imageViewBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .basicAbilityBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .basicAbilityFinallyBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .setProductScoreBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .productBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .productUploadBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .allScoreBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .setProductBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .efficiencyBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .reportBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .reportBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .resultDownBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  .port {
+    cursor: pointer;
+  }
+
+  .implementBtn-cancel-table {
+    margin-right: 15px;
+    color: #e57514;
+    cursor: pointer;
+  }
+
+  .implementBtn-table {
+    margin-right: 15px;
+    color: rgb(0, 156, 92);
+    cursor: pointer;
+  }
+
+  //操作
+  .operateBtn-table {
+    margin-right: 15px;
+    color: #ae00ff;
+    cursor: pointer;
+  }
+
+  .uploadBtn-table {
+    margin-right: 15px;
+    // color: #ae00ff;
+    cursor: pointer;
+  }
+
+  //群组
+  .reportBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  //注销
+  .logoutBtn-table {
+    margin-right: 15px;
+    color: #ae00ff;
+    cursor: pointer;
+  }
+
+  .processRepeatBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  //恢复
+  .recoveryBtn-table,
+  .downBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  // 结果导入
+  .resultInputBtn-table {
+    margin-right: 15px;
+    color: #00aeff;
+    cursor: pointer;
+  }
+
+  //销毁
+  .destroyBtn-table {
+    margin-right: 15px;
+    // color: #b1bdb8;
+    color: rgb(0, 156, 92);
+    cursor: pointer;
+  }
+
+  //资源样式
+  .sourceManageBtn-table {
+    margin-right: 15px;
+    color: greenyellow;
+    cursor: pointer;
+  }
+
+  // 分发
+  .distributeBtn-table {
+    margin-right: 15px;
+    color: greenyellow;
+    cursor: pointer;
+  }
+
+  .delBtn-table,
+  .stopUseBtn-table {
+    // margin-right: 15px;
+    margin-right: 15px;
+    color: #ff0000;
+    cursor: pointer;
+  }
+
+  .removeBtn-table {
+    margin-right: 15px;
+    // color: #ff0000;
+    cursor: pointer;
+  }
+
+  .handleBtn-table {
+    margin-right: 15px;
+    color: rgb(0, 156, 92);
+    cursor: pointer;
+  }
+
+  .isweightBtn-table {
+    width: 50%;
+
+    .el-input__inner {
+      color: #98dcff;
+    }
+  }
+
+  .isweightShow-table,
+  .startUseBtn-table {
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .public-table {
+    color: #9a9a9a !important;
+  }
+
+  .topBtn-table,
+  .upBtn-table {
+    margin-right: 15px;
+    color: #c9e1ff;
+    cursor: pointer;
+  }
+
+  .isCheck {
+    color: #9a9a9a;
+  }
+
+  .encryptBtn-table {
+    // color: #8ef258;
+    cursor: pointer;
+  }
+
+  .decodeBtn-table {
+    // color: #e5540d;
+    cursor: pointer;
+  }
+
+  :deep(.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell) {
+    background: transparent;
+    color: @main-font-color;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .green {
+    color: green;
+  }
+
+  .yellow {
+    color: yellow;
+  }
+
+  .drop {
+    margin: 0 auto;
+  }
+
+  .my-modal {
+    color: @main-font-color;
+  }
+
+  .my-modal .operate-item {
+    text-align: left;
+  }
+
+  .disabled {
+    color: #ccc;
+  }
+
+  .el-table--small {
+    font-size: @main-font-size;
+  }
+
+  // 样本标注任务管理详情按钮
+  .taskDetailBtn-table {
+    color: #8080ff;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  // 取消按钮
+  .cancelBtn-table {
+    color: #d7d7d7;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .process-style {
+    width: 120px !important;
+    margin: 0 15px;
+  }
+
+  .el-button--small {
+    padding: 8px 7px;
+  }
+
+  .status-box {
+    border: 1px solid #00aeff;
+  }
+
+  .activeBtn-table {
+    span {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  }
+
+}

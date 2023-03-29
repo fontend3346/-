@@ -1,0 +1,197 @@
+//左上角搜索框
+.select-main {
+  .title {
+    color: @main-font-color;
+    size: @main-font-size;
+    margin-bottom: 10px;
+    .first-span {
+      border-bottom: 1px solid #409eff;
+    }
+    .type-style {
+      display: inline-block;
+    }
+    .cut {
+      margin: 0 5px;
+    }
+    span {
+      display: inline-block;
+    }
+    hr {
+      width: 100%;
+      border: none;
+      height: 1px;
+      margin-top: 10px;
+      background-color: #13598c;
+    }
+  }
+  .station-style {
+    color: @main-font-color;
+    size: @main-font-size;
+    .station-total {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .station-total-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 47%;
+        padding: 10px 20px;
+        background: rgba(0, 0, 0, 0.4);
+        box-sizing: border-box;
+        border-radius: 4px;
+        .green-icon,
+        .red-icon {
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          background-color: green;
+          border-radius: 50%;
+          border-radius: 50%;
+          margin: 0 10px;
+        }
+        .red-icon {
+          background-color: red;
+        }
+      }
+    }
+    .buttons {
+      color: @main-font-color;
+      size: @main-font-size;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      button {
+        height: 35px;
+        width: 66px;
+        cursor: pointer;
+        border: none;
+        color: @main-font-color;
+        background-color: rgba(24, 77, 126, 0.8);
+        margin: 0 5px 5px 0;
+        border-radius: 3px;
+      }
+      .button-border {
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        background-color: #3a77d3;
+        border: 1px solid #077fff;
+        border-radius: 3px;
+      }
+    }
+  }
+  .btn-show {
+    text-align: center;
+    color: #0573e9;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: @main-font-size;
+    .unfold,
+    .fold {
+      color: #0573e9;
+      font-size: 8px;
+      margin-left: 10px;
+    }
+  }
+  .btn-show-fold {
+    padding-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #0573e9;
+    font-size: @main-font-size;
+    .title-box {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0 10px;
+      .unfold,
+      .fold {
+        color: #0573e9;
+        font-size: 8px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .top-border {
+    border-bottom: 1px solid #13598c;
+  }
+  .icon-location {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .el-tabs__nav-scroll {
+    width: 100%;
+    .el-tabs__nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .el-tabs__active-bar {
+        width: 70px !important;
+        height: 100%;
+        background: linear-gradient(#fff, 10%, transparent);
+        left: -20px;
+      }
+      .el-tabs__item.is-top:nth-child(2) {
+        padding: 0 20px;
+      }
+      .el-tabs__item.is-top:last-child {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .select-station {
+    display: flex;
+    flex-direction: column;
+
+    .station-top {
+      // height: 50%;
+      width: 100%;
+      // display: flex;
+      // justify-content: space-around;
+      // padding-bottom: 10px;
+
+      .station-title {
+        color: @main-font-color;
+        width: 65px;
+        padding-right: @title-padding;
+        text-align: right;
+      }
+
+      .station-top-item {
+        // height: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // padding: 10px 0;
+        margin-bottom: 20px;
+
+        .el-input {
+          width: 220px;
+          color: @main-font-color;
+          background: transparent;
+          border-bottom-right-radius: 5px;
+        }
+
+        :deep(.el-input__wrapper) {
+          width: 220px;
+          flex-grow: 0;
+        }
+      }
+
+      .station-query {
+        width: 50%;
+        height: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 25px;
+      }
+    }
+  }
+}

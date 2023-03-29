@@ -1,0 +1,72 @@
+@import "./variable.less";
+.data-monitor {
+  width: 100%;
+  height: calc(100% - 40px);
+  box-sizing: border-box;
+  position: relative;
+  .top-echarts {
+    width: 100%;
+    height: 50%;
+  }
+  .title-info {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .item-title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: calc(25% - 16px);
+      padding: 0 40px;
+      box-sizing: border-box;
+      background-color: #0b3b53;
+      margin-bottom: 10px;
+      .progress {
+        width: 60%;
+        .el-progress-bar__inner {
+          background-color: #00c6ff;
+        }
+        .el-progress__text {
+          color: #fff;
+          padding-left: 20px;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+      .title {
+        color: #fff;
+        padding-right: 20px;
+      }
+    }
+  }
+  .pit-style {
+    width: 100%;
+    height: 25%;
+  }
+  .time-total {
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    // width: 8%;
+    .total-item {
+      width: 80px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      background: #053276;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .tota-active {
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      background: #0a5bd4;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  }
+}

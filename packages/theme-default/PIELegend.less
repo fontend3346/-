@@ -1,0 +1,90 @@
+// 图例
+.legend-show {
+  // width: 1000px;
+  // height: 50px;
+  // background: url("../../src/assets/qietu/legend.png");
+  // background: url("../../src/assets/qietu/modals-bg.png");
+  background: linear-gradient(rgba(0, 38, 73, 0.88) 0%, rgba(0, 47, 91, 0.96) 100%) transparent;
+  box-shadow: rgb(61 141 255 / 30%) 0px 4px 20px 0px, rgb(0 100 186 / 50%) 0px 0px 32px 0px inset;
+  border: 1px solid;
+  border-image: linear-gradient(rgb(0, 133, 192), rgb(0, 91, 176)) 1 / 1 / 0 stretch;
+  background-size: 100% 100%;
+  padding: 20px;
+  display: flex;
+
+  .legend-img {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      // margin-right: 10px;
+    }
+
+    .legend-small-img {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // margin-right: 10px;
+      display: flex;
+
+      // img {
+      //   width: 18px;
+      //   height: 18px;
+      //   margin-right: 0px;
+      // }
+    }
+  }
+
+  .legend-imgs {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      // margin-right: 10px;
+    }
+
+  }
+
+  .legend-font {
+    color: #fff;
+  }
+}
+
+.legend-show::before {
+  content: "";
+  display: block;
+  /* width: 8px; */
+  // border-left: 28px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid transparent;
+  border-left: 7px solid #0173DD;
+  border-bottom: 10px solid transparent;
+  /* border-right: 10px solid red; */
+  height: 32px;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+
+.legend-show::after {
+  content: "";
+  display: block;
+  /* width: 8px; */
+  border-top: 10px solid transparent;
+  border-right: 7px solid #0173DD;
+  border-bottom: 10px solid transparent;
+  /* border-right: 10px solid red; */
+  height: 32px;
+  width: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
